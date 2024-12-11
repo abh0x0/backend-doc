@@ -4,24 +4,7 @@ This repository contains knowledge transfer documentation for [cbapp/monorepo](h
 
 ## System Architecture
 
-```mermaid
-graph TD
-    A[GraphQL API Layer] --> B[Business Core]
-    B --> C[Data Layer]
-
-    subgraph "Business Core (golib)"
-        D[Trading Engine]
-        E[Payment System]
-        F[User Management]
-        G[Support Systems]
-    end
-
-    subgraph "Data Layer"
-        K[PostgreSQL]
-        L[Redis Cache]
-        M[External Integrations]
-    end
-```
+![System Architecture](./system-architecture.svg)
 
 ## Repository Structure
 ```
